@@ -1,0 +1,169 @@
+<doctype html>
+<html>
+<head> <title> Calculator </title></head>
+<body>
+<table>
+<tbody><tr>
+<th width="200">Shares Bought</th>
+<th width="30"></th>
+<th width="200">Purchase Price</th>
+</tr>
+<tr>
+<td width="200">1.<input  type="text" id="number1" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator1" style="color:Red;visibility:hidden;">Only Numbers allowed</span>
+</td>
+<td width="30"></td>
+<td width="200">$<input type="text" id="price1" class="input">
+<span id="ctl00_MainContent_Regex1" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">2.<input type="text" id="number2" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator3" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input type="text" id="price2" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator2" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">3.<input type="text" id="number3" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator4" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input type="text" id="price3" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator12" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">4.<input name="ctl00$MainContent$txtSharesBought4" type="text" id="number4" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator5" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input name="ctl00$MainContent$txtPurchasePrice4" type="text" id="price4" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator13" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">5.<input name="ctl00$MainContent$txtSharesBought5" type="text" id="number5" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator6" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input name="ctl00$MainContent$txtPurchasePrice5" type="text" id="price5" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator14" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">6.<input name="ctl00$MainContent$txtSharesBought6" type="text" id="number6" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator7" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input name="ctl00$MainContent$txtPurchasePrice6" type="text" id="price6" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator15" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">7.<input name="ctl00$MainContent$txtSharesBought7" type="text" id="number7" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator8" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input name="ctl00$MainContent$txtPurchasePrice7" type="text" id="price7" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator16" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">8.<input name="ctl00$MainContent$txtSharesBought8" type="text" id="number8" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator9" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input name="ctl00$MainContent$txtPurchasePrice8" type="text" id="price8" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator17" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">9.<input type="text" id="number9" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator10" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input type="text" id="price9" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator18" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+<tr>
+<td width="200">10.<input type="text" id="number10" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator11" style="color:Red;visibility:hidden;">Only Numbers allowed</span></td>
+<td width="30"></td>
+<td width="200">$<input type="text" id="price10" class="input">
+<span id="ctl00_MainContent_RegularExpressionValidator19" style="color:Red;visibility:hidden;">Please enter valid price.</span></td>
+</tr>
+</tbody></table>
+
+
+<div class="calculate">
+<button  id="calculate" onclick="calculate()">CALCULATE</button>
+</div><br>
+<div class="result" id="resultbox">
+<h3>Stock Average Down Calculator Results</h3>
+<hr>
+<table>
+<tbody>
+<tr>
+<td>
+<label for="priceperstock"><strong>Average Price</strong></label>
+</td>
+<td>
+<div class="resultdata" id="priceperstock">
+#
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<label for="totalstock">Total stocks</label>
+</td>
+<td>
+<div class="resultdata" id="totalstock">
+#
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<label for="totalbuyamt">Total Amount*</label>
+</td>
+<td>
+<div class="resultdata" id="totalbuyamt">
+#
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><br></body>
+</html>
+
+<script>
+function calculate() {
+    let n1 = document.getElementById("number1").value;
+    let p1 = document.getElementById("price1").value;
+    let n2 = document.getElementById("number2").value;
+    let p2 = document.getElementById("price2").value;
+    let n3 = document.getElementById("number3").value;
+    let p3 = document.getElementById("price3").value;
+    let n4 = document.getElementById("number4").value;
+    let p4 = document.getElementById("price4").value;
+    let n5 = document.getElementById("number5").value;
+    let p5 = document.getElementById("price5").value;
+    let n6 = document.getElementById("number6").value;
+    let p6 = document.getElementById("price6").value;
+    let n7 = document.getElementById("number7").value;
+    let p7 = document.getElementById("price7").value;
+    let n8 = document.getElementById("number8").value;
+    let p8 = document.getElementById("price8").value;
+    let n9 = document.getElementById("number9").value;
+    let p9 = document.getElementById("price9").value;
+    let n10 = document.getElementById("number10").value;
+    let p10 = document.getElementById("price10").value;
+    let a1 = n1 * p1;
+    let a2 = n2 * p2;
+    let a3 = n3 * p3;
+    let a4 = n4 * p4;
+    let a5 = n5 * p5;
+    let a6 = n6 * p6;
+    let a7 = n7 * p7;
+    let a8 = n8 * p8;
+    let a9 = n9 * p9;
+    let a10 = n10 * p10;
+    let ta = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10;
+    let tn = Number(n1) + Number(n2) + Number(n3) + Number(n4) + Number(n5) + Number(n6) + Number(n7) + Number(n8) + Number(n9) + Number(n10);
+    let pps = ta / tn;
+    document.getElementById("priceperstock").innerHTML = "$" + " " + new Intl.NumberFormat().format(pps.toFixed(2));
+    document.getElementById("totalstock").innerHTML = new Intl.NumberFormat().format(tn);
+    //document.getElementById("totalbuyamt").innerHTML = "$" + " " + new Intl.NumberFormat().format(ta.toFixed(2));
+    document.getElementById("resultbox").style.display = "block";
+}
+</script>
